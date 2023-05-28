@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:weatherapp/components/weather_item.dart';
 import 'package:weatherapp/models/constants.dart';
@@ -205,9 +206,12 @@ class _DetailPageState extends State<DetailPage> {
                                               Text(
                                                 getForecastWeather(
                                                     0)["forecastDate"],
-                                                style: const TextStyle(
+                                                style: GoogleFonts.mukta(
+                                                  textStyle: Theme.of(context)
+                                                      .textTheme
+                                                      .displayMedium,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
                                                 ),
                                               ),
                                               Row(
@@ -218,21 +222,25 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(0)[
                                                                 "minTemperature"]
                                                             .toString(),
-                                                        style: const TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: Colors.white,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
                                                       Text(
                                                         "°",
-                                                        style: TextStyle(
-                                                            color: _constants
-                                                                .greyColor,
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .displayMedium,
+                                                            color: Colors.white,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: const [
                                                               FontFeature
                                                                   .enable(
@@ -250,22 +258,27 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(0)[
                                                                 "maxTemperature"]
                                                             .toString(),
-                                                        style: TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: _constants
                                                               .blackColor,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
                                                       Text(
                                                         "°",
-                                                        style: TextStyle(
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .displayMedium,
                                                             color: _constants
                                                                 .blackColor,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: const [
                                                               FontFeature
                                                                   .enable(
@@ -302,9 +315,14 @@ class _DetailPageState extends State<DetailPage> {
                                                   Text(
                                                     getForecastWeather(
                                                         1)["weatherName"],
-                                                    style: const TextStyle(
-                                                        fontSize: 16,
-                                                        color: Colors.white),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color: Colors.white,
+                                                      fontSize: 16,
+                                                    ),
                                                   )
                                                 ],
                                               ),
@@ -318,9 +336,15 @@ class _DetailPageState extends State<DetailPage> {
                                                                 "chanceOfRain"]
                                                             .toString() +
                                                         "%",
-                                                    style: const TextStyle(
-                                                        fontSize: 18,
-                                                        color: Colors.grey),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color:
+                                                          _constants.greyColor,
+                                                      fontSize: 18,
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     width: 5,
@@ -356,9 +380,12 @@ class _DetailPageState extends State<DetailPage> {
                                               Text(
                                                 getForecastWeather(
                                                     1)["forecastDate"],
-                                                style: const TextStyle(
+                                                style: GoogleFonts.mukta(
+                                                  textStyle: Theme.of(context)
+                                                      .textTheme
+                                                      .displayMedium,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.w600,
+                                                  fontSize: 16,
                                                 ),
                                               ),
                                               Row(
@@ -369,24 +396,29 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(1)[
                                                                 "minTemperature"]
                                                             .toString(),
-                                                        style: const TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: Colors.white,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
-                                                      const Text(
+                                                      Text(
                                                         "°",
-                                                        style: TextStyle(
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .displayMedium,
                                                             color: Colors.white,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: [
-                                                              FontFeature
-                                                                  .enable(
-                                                                      'sups'),
+                                                              const FontFeature
+                                                                      .enable(
+                                                                  'sups'),
                                                             ]),
                                                       ),
                                                     ],
@@ -400,22 +432,27 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(1)[
                                                                 "maxTemperature"]
                                                             .toString(),
-                                                        style: TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: _constants
                                                               .blackColor,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
                                                       Text(
                                                         "°",
-                                                        style: TextStyle(
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .displayMedium,
                                                             color: _constants
                                                                 .blackColor,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: const [
                                                               FontFeature
                                                                   .enable(
@@ -452,9 +489,14 @@ class _DetailPageState extends State<DetailPage> {
                                                   Text(
                                                     getForecastWeather(
                                                         1)["weatherName"],
-                                                    style: const TextStyle(
-                                                        fontSize: 16,
-                                                        color: Colors.white),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color: Colors.white,
+                                                      fontSize: 16,
+                                                    ),
                                                   )
                                                 ],
                                               ),
@@ -468,9 +510,15 @@ class _DetailPageState extends State<DetailPage> {
                                                                 "chanceOfRain"]
                                                             .toString() +
                                                         "%",
-                                                    style: const TextStyle(
-                                                        fontSize: 18,
-                                                        color: Colors.grey),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color:
+                                                          _constants.greyColor,
+                                                      fontSize: 18,
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     width: 5,
@@ -506,9 +554,12 @@ class _DetailPageState extends State<DetailPage> {
                                               Text(
                                                 getForecastWeather(
                                                     2)["forecastDate"],
-                                                style: const TextStyle(
+                                                style: GoogleFonts.mukta(
+                                                  textStyle: Theme.of(context)
+                                                      .textTheme
+                                                      .displayMedium,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.w600,
+                                                  fontSize: 16,
                                                 ),
                                               ),
                                               Row(
@@ -519,21 +570,26 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(2)[
                                                                 "minTemperature"]
                                                             .toString(),
-                                                        style: const TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: Colors.white,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
                                                       Text(
                                                         "°",
-                                                        style: TextStyle(
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme
+                                                                    .of(context)
+                                                                .textTheme
+                                                                .displayMedium,
                                                             color: _constants
                                                                 .greyColor,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: const [
                                                               FontFeature
                                                                   .enable(
@@ -551,22 +607,27 @@ class _DetailPageState extends State<DetailPage> {
                                                         getForecastWeather(2)[
                                                                 "maxTemperature"]
                                                             .toString(),
-                                                        style: TextStyle(
+                                                        style:
+                                                            GoogleFonts.mukta(
+                                                          textStyle: Theme.of(
+                                                                  context)
+                                                              .textTheme
+                                                              .displayMedium,
                                                           color: _constants
                                                               .blackColor,
                                                           fontSize: 30,
-                                                          fontWeight:
-                                                              FontWeight.w600,
                                                         ),
                                                       ),
                                                       Text(
                                                         "°",
-                                                        style: TextStyle(
+                                                        style: GoogleFonts.mukta(
+                                                            textStyle: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .displayMedium,
                                                             color: _constants
                                                                 .blackColor,
                                                             fontSize: 30,
-                                                            fontWeight:
-                                                                FontWeight.w600,
                                                             fontFeatures: const [
                                                               FontFeature
                                                                   .enable(
@@ -603,9 +664,14 @@ class _DetailPageState extends State<DetailPage> {
                                                   Text(
                                                     getForecastWeather(
                                                         0)["weatherName"],
-                                                    style: const TextStyle(
-                                                        fontSize: 16,
-                                                        color: Colors.white),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color: Colors.white,
+                                                      fontSize: 16,
+                                                    ),
                                                   )
                                                 ],
                                               ),
@@ -619,9 +685,15 @@ class _DetailPageState extends State<DetailPage> {
                                                                 "chanceOfRain"]
                                                             .toString() +
                                                         "%",
-                                                    style: const TextStyle(
-                                                        fontSize: 18,
-                                                        color: Colors.grey),
+                                                    style: GoogleFonts.mukta(
+                                                      textStyle:
+                                                          Theme.of(context)
+                                                              .textTheme
+                                                              .displayMedium,
+                                                      color:
+                                                          _constants.greyColor,
+                                                      fontSize: 18,
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     width: 5,

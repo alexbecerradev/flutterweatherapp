@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:weatherapp/models/constants.dart';
@@ -116,11 +117,15 @@ class _GetStarted extends State<GetStarted> {
                 ),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               child: Center(
                 child: Text(
                   'Check the real-time weather in your city.',
-                  style: TextStyle(color: Colors.white, fontSize: 14),
+                  style: GoogleFonts.mukta(
+                    textStyle: Theme.of(context).textTheme.displayMedium,
+                    color: Colors.white,
+                    fontSize: 15,
+                  ),
                 ),
               ),
             ),
@@ -199,8 +204,14 @@ class _GetStarted extends State<GetStarted> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-                child: const Text('Get Started',
-                    style: TextStyle(color: Colors.white)),
+                child: Text(
+                  'Get Started',
+                  style: GoogleFonts.mukta(
+                    textStyle: Theme.of(context).textTheme.displayMedium,
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
               ),
             ),
           ],

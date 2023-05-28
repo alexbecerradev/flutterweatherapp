@@ -10,6 +10,7 @@ import '../models/constants.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'detail_page.dart';
 
@@ -257,19 +258,20 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.only(top: 8.0, left: 10),
                         child: Text(
                           temperature.toString(),
-                          style: TextStyle(
-                            fontSize: 60,
-                            fontWeight: FontWeight.bold,
+                          style: GoogleFonts.mukta(
+                            textStyle:
+                                Theme.of(context).textTheme.displayMedium,
                             color: _constants.secundaryColor,
+                            fontSize: 50,
                           ),
                         ),
                       ),
                       Text(
                         '°',
-                        style: TextStyle(
-                          fontSize: 45,
-                          fontWeight: FontWeight.bold,
+                        style: GoogleFonts.mukta(
+                          textStyle: Theme.of(context).textTheme.displayMedium,
                           color: _constants.secundaryColor,
+                          fontSize: 30,
                         ),
                       ),
                     ],
@@ -277,18 +279,20 @@ class _HomePageState extends State<HomePage> {
                   Center(
                     child: Text(
                       currentWeatherStatus,
-                      style: const TextStyle(
-                        color: Colors.white70,
-                        fontSize: 20.0,
+                      style: GoogleFonts.mukta(
+                        textStyle: Theme.of(context).textTheme.displayMedium,
+                        color: Colors.white,
+                        fontSize: 20,
                       ),
                     ),
                   ),
                   Center(
                     child: Text(
                       currentDate,
-                      style: const TextStyle(
-                        color: Colors.white70,
-                        fontSize: 20.0,
+                      style: GoogleFonts.mukta(
+                        textStyle: Theme.of(context).textTheme.displayMedium,
+                        color: Colors.white,
+                        fontSize: 20,
                       ),
                     ),
                   ),
@@ -328,7 +332,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: const EdgeInsets.only(top: 10),
-              height: size.height * .18,
+              height: size.height * .17,
               // ignore: prefer_const_constructors
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -341,10 +345,11 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Text(
                           'Today',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                            color: _constants.greyColor,
+                          style: GoogleFonts.mukta(
+                            textStyle:
+                                Theme.of(context).textTheme.displayMedium,
+                            color: Colors.white,
+                            fontSize: 17,
                           ),
                         ),
                         GestureDetector(
@@ -359,10 +364,11 @@ class _HomePageState extends State<HomePage> {
                           ),
                           child: Text(
                             'Forecasts',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 15,
-                              color: _constants.secundaryColor,
+                            style: GoogleFonts.mukta(
+                              textStyle:
+                                  Theme.of(context).textTheme.displayMedium,
+                              color: Colors.white,
+                              fontSize: 17,
                             ),
                           ),
                         ),
@@ -423,10 +429,11 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Text(
                                 forecastTime,
-                                style: TextStyle(
-                                  fontSize: 10,
+                                style: GoogleFonts.mukta(
+                                  textStyle:
+                                      Theme.of(context).textTheme.displayMedium,
                                   color: _constants.greyColor,
-                                  fontWeight: FontWeight.w500,
+                                  fontSize: 15,
                                 ),
                               ),
                               Image.asset(
@@ -440,18 +447,22 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     forecastTemperature,
-                                    style: TextStyle(
+                                    style: GoogleFonts.mukta(
+                                      textStyle: Theme.of(context)
+                                          .textTheme
+                                          .displayMedium,
                                       color: _constants.greyColor,
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w600,
+                                      fontSize: 15,
                                     ),
                                   ),
                                   Text(
                                     '°',
-                                    style: TextStyle(
-                                      color: _constants.greyColor,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 17,
+                                    style: GoogleFonts.mukta(
+                                      textStyle: Theme.of(context)
+                                          .textTheme
+                                          .displayMedium,
+                                      color: _constants.secundaryColor,
+                                      fontSize: 15,
                                       fontFeatures: const [
                                         FontFeature.enable('sups'),
                                       ],
