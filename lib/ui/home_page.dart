@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         width: size.width,
         height: size.height,
-        padding: const EdgeInsets.only(top: 40, left: 10, right: 10),
+        padding: const EdgeInsets.only(top: 50, left: 10, right: 10),
         color: _constants.primaryColor.withOpacity(.1),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -161,13 +161,13 @@ class _HomePageState extends State<HomePage> {
                                     controller:
                                         ModalScrollController.of(context),
                                     child: Container(
-                                      height: size.height * .7,
+                                      height: size.height * .5,
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20, vertical: 10),
                                       child: Column(
                                         children: [
                                           SizedBox(
-                                            height: 70,
+                                            width: 70,
                                             child: Divider(
                                               thickness: 3.5,
                                               color: _constants.primaryColor,
@@ -245,7 +245,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Center(
                     child: SizedBox(
-                      height: 160,
+                      height: 150,
                       // ignore: prefer_interpolation_to_compose_strings
                       child: Image.asset("assets/" + weatherIcon),
                     ),
@@ -332,14 +332,15 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: const EdgeInsets.only(top: 10),
-              height: size.height * .15,
+              height: size.height * .20,
               // ignore: prefer_const_constructors
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10, top: 5),
+                    padding: const EdgeInsets.only(
+                        left: 10, right: 10, top: 10, bottom: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -375,11 +376,8 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 5,
-                  ),
                   SizedBox(
-                    height: 100,
+                    height: 90,
                     child: ListView.builder(
                       itemCount: hourlyWeatherForecast.length,
                       scrollDirection: Axis.horizontal,
@@ -439,10 +437,10 @@ class _HomePageState extends State<HomePage> {
                               Image.asset(
                                 // ignore: prefer_interpolation_to_compose_strings
                                 'assets/' + forecastWeatherIcon,
-                                width: 20,
-                                height: 20,
+                                width: 40,
+                                height: 40,
                               ),
-                              Row(
+                              /*Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
@@ -469,7 +467,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   )
                                 ],
-                              ),
+                              ),*/
                             ],
                           ),
                         );

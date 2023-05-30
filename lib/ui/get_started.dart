@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:weatherapp/models/constants.dart';
-import 'package:lottie/lottie.dart';
 import 'package:weatherapp/ui/home_page.dart';
 
 class GetStarted extends StatefulWidget {
@@ -108,25 +107,11 @@ class _GetStarted extends State<GetStarted> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(5),
               child: SizedBox(
-                height: 200,
-                width: 400,
-                child: Lottie.network(
-                  'https://assets8.lottiefiles.com/packages/lf20_yu0tsC9558.json',
-                ),
-              ),
-            ),
-            SizedBox(
-              child: Center(
-                child: Text(
-                  'Check the real-time weather in your city.',
-                  style: GoogleFonts.mukta(
-                    textStyle: Theme.of(context).textTheme.displayMedium,
-                    color: Colors.white,
-                    fontSize: 15,
-                  ),
-                ),
+                height: 400,
+                width: 600,
+                child: Image.asset("assets/logo.png"),
               ),
             ),
             Padding(
