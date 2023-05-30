@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         width: size.width,
         height: size.height,
-        padding: const EdgeInsets.only(top: 50, left: 10, right: 10),
+        padding: const EdgeInsets.only(top: 40, left: 10, right: 10),
         color: _constants.primaryColor.withOpacity(.1),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                                     controller:
                                         ModalScrollController.of(context),
                                     child: Container(
-                                      height: size.height * .6,
+                                      height: size.height * .7,
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20, vertical: 10),
                                       child: Column(
@@ -332,7 +332,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: const EdgeInsets.only(top: 10),
-              height: size.height * .17,
+              height: size.height * .15,
               // ignore: prefer_const_constructors
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -376,10 +376,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   const SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   SizedBox(
-                    height: 90,
+                    height: 100,
                     child: ListView.builder(
                       itemCount: hourlyWeatherForecast.length,
                       scrollDirection: Axis.horizontal,
